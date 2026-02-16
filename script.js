@@ -29,12 +29,14 @@ function validateForm() {
     return false;
 }
 
-// ReqRes API - Get random user data
-fetch("https://reqres.in/api/users/2")
+// Dog Facts API - Get random dog fact
+fetch("https://dukengn.github.io/Dog-facts-API/")
     .then(response => response.json())
     .then(data => {
         let quoteElement = document.getElementById("quote");
         if (quoteElement) {
-            quoteElement.innerHTML = "Featured Profile: " + data.data.first_name + " " + data.data.last_name + " (" + data.data.email + ")";
+            // Handle different possible response formats
+            let fact = data.fact || data.facts || data;
+            quoteElement.innerHTML = "Dog Fact: " + fact;
         }
     });
