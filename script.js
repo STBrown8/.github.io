@@ -29,12 +29,12 @@ function validateForm() {
     return false;
 }
 
-// Bored API - Get random activity
-fetch("https://www.boredapi.com/api/activity")
+// ReqRes API - Get random user data
+fetch("https://reqres.in/api/users/2")
     .then(response => response.json())
     .then(data => {
         let quoteElement = document.getElementById("quote");
         if (quoteElement) {
-            quoteElement.innerHTML = "Try this: " + data.activity;
+            quoteElement.innerHTML = "Featured Profile: " + data.data.first_name + " " + data.data.last_name + " (" + data.data.email + ")";
         }
     });
