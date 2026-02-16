@@ -29,14 +29,11 @@ function validateForm() {
     return false;
 }
 
-// Dog Facts API - Get random dog fact
-fetch("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
-    .then(response => response.json())
-    .then(data => {
-        let quoteElement = document.getElementById("quote");
-        if (quoteElement) {
-            // Handle different possible response formats
-            let fact = data.fact || data.facts || data;
-            quoteElement.innerHTML = "Dog Fact: " + fact;
-        }
-    });
+// HTTP Dog API - Display random HTTP status code dog image
+let httpCodes = [200, 201, 202, 204, 301, 302, 304, 400, 401, 403, 404, 500, 502, 503];
+let randomCode = httpCodes[Math.floor(Math.random() * httpCodes.length)];
+
+let quoteElement = document.getElementById("quote");
+if (quoteElement) {
+    quoteElement.innerHTML = '<img src="https://http.dog/' + randomCode + '.jpg" alt="HTTP ' + randomCode + ' Dog" style="max-width: 400px; height: auto; border-radius: 8px;"><br>HTTP Status Code: ' + randomCode;
+}
