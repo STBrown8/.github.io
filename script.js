@@ -25,17 +25,16 @@ function validateForm() {
         return false;
     }
     
-    // if everything is filled out
     alert("Thank you for your message!");
     return false;
 }
 
-// Get quote from API
-fetch("https://api.quotable.io/random?tags=technology")
+// Bored API - Get random activity
+fetch("https://www.boredapi.com/api/activity")
     .then(response => response.json())
     .then(data => {
         let quoteElement = document.getElementById("quote");
         if (quoteElement) {
-            quoteElement.innerHTML = '"' + data.content + '" - ' + data.author;
+            quoteElement.innerHTML = "Try this: " + data.activity;
         }
     });
