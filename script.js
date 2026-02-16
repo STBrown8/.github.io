@@ -30,7 +30,7 @@ function validateForm() {
 }
 
 // Dog Facts API - Get random dog fact
-fetch("https://dukengn.github.io/Dog-facts-API/")
+fetch("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all")
     .then(response => response.json())
     .then(data => {
         let quoteElement = document.getElementById("quote");
