@@ -10,7 +10,7 @@ body {
 
 /* Navigation */
 nav {
-    background: #2c3e50;
+    background: #2d2d2d;
     padding: 15px;
     text-align: center;
 }
@@ -23,26 +23,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: #ff6b6b;
 }
 
 /* Headings */
 h1 {
-    color: #2c3e50;
+    color: #2d2d2d;
     text-align: center;
     margin-top: 30px;
     font-size: 2.5em;
 }
 
 h2 {
-    color: #34495e;
+    color: #3d3d3d;
     text-align: center;
     font-size: 1.8em;
     margin-top: 20px;
 }
 
 h3 {
-    color: #34495e;
+    color: #3d3d3d;
     text-align: center;
     font-size: 1.3em;
 }
@@ -73,7 +73,7 @@ table {
 }
 
 th {
-    background-color: #2c3e50;
+    background-color: #2d2d2d;
     color: white;
     padding: 15px;
     text-align: left;
@@ -93,7 +93,7 @@ tr:hover {
     font-style: italic;
     background-color: #ecf0f1;
     padding: 15px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #ff6b6b;
     max-width: 700px;
     margin: 20px auto;
 }
@@ -108,7 +108,7 @@ form {
 
 label {
     font-weight: bold;
-    color: #2c3e50;
+    color: #2d2d2d;
 }
 
 input[type="text"],
@@ -125,7 +125,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #3498db;
+    background-color: #ff6b6b;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -134,7 +134,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #ff5252;
 }
 
 /* Tool Sections */
@@ -146,7 +146,7 @@ input[type="submit"]:hover {
 }
 
 .tool-section h3 {
-    color: #2c3e50;
+    color: #2d2d2d;
 }
 
 .tool-section p {
