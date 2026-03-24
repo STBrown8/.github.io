@@ -20,18 +20,19 @@
 
 <p>Interested in collaborating on audio engineering projects, A/V technical work, or discussing IT opportunities? Please fill out the form below.</p>
 
-<form name="contactForm" onsubmit="return validateForm()">
+<form action="https://formspree.io/f/mvzweqea" method="POST">
+
 <label for="name">Name:</label><br>
-<input type="text" name="name" id="name"><br><br>
+<input type="text" name="name" id="name" required><br><br>
 
 <label for="email">Email:</label><br>
-<input type="text" name="email" id="email"><br><br>
+<input type="email" name="email" id="email" required><br><br>
 
 <label for="subject">Subject:</label><br>
-<input type="text" name="subject" id="subject"><br><br>
+<input type="text" name="subject" id="subject" required><br><br>
 
 <label for="message">Message:</label><br>
-<textarea name="message" id="message" rows="6"></textarea><br><br>
+<textarea name="message" id="message" rows="6" required></textarea><br><br>
 
 <input type="submit" value="Submit">
 </form>
@@ -41,8 +42,6 @@
 <h2>Professional Connections</h2>
 <p>Location: Tampa, FL</p>
 <p>Available for audio engineering projects, A/V technical consulting, and IT opportunities.</p>
-
-<script src="script.js"></script>
 
 </body>
 </html>
